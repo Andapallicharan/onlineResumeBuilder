@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Online Resume Builder</title>
+</head>
+<body>
+    <div class="container">
+        <div id="in">
+         <header>
+            <h1>Online Resume Builder</h1>
+         </header>
+        
+         <form id="resumeForm">
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required  autocomplete="off"/>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required  autocomplete="off"/>
+            
+            <h2>Objective</h2>
+            <input type="text" id="objective" placeholder="Write your objective here..." required autocomplete="off"/>
+            
+            <h2>Education Qualification </h2>
+            <Label for="education1">Format of Degree-College/School Name(CGPA/Percentage)</Label>
+            <input type="text" id="education1" placeholder="List your Higher qualification..." required/>
+            <input type="text" id="education2" placeholder="List your InterMediate Or Diploma qualification..." required/>
+            <input type="text" id="education3" placeholder="List your SSC/CBSE qualification..." required/>
+            <h2>Work Experience</h2>
+            <input type="text" id="experience" placeholder="List your work experience..." required/>
+            <h2>Skills & Interests</h2>
+            <input type="text" id="skills" placeholder="List your skills and interests..." required/>
+            
+            <button type="submit">Generate Resume</button>
+         </form>
+
+         <hr/>
+        </div>
+        <div id="resumeOutput" class="resume-output">
+            <div id="resumeContent"></div>
+        </div>
+        <button id='print' onclick="window.print()" >Print</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
